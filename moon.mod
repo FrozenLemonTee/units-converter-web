@@ -15,15 +15,15 @@ version = "0.1.0"
 
 readme = "README.md"
 
-repository = ""
+repository = "https://github.com/FrozenLemonTee/units-converter-web"
 
 license = "Apache-2.0"
 
-keywords = [ ]
+keywords = [ "moonbit", "units", "converter", "web", "javascript" ]
 
 preferred_target = "js"
 
-description = "A lightweight web interface for units-converter."
+description = "A lightweight MoonBit-powered web interface for units-converter."
 
 import {
   "FrozenLemonTee/units-converter@0.1.0",
