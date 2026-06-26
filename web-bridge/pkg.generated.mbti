@@ -1,0 +1,20 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "FrozenLemonTee/units-converter-web/web-bridge"
+
+// Values
+pub fn convert_json(String, String, String) -> String
+
+pub fn inspect_json(String, String) -> String
+
+pub fn parse_json(String, String) -> String
+
+pub fn parse_unit_json(String, String) -> String
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+

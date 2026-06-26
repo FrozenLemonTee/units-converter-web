@@ -1,0 +1,19 @@
+import {
+  "FrozenLemonTee/units-converter" @uc,
+}
+
+supported_targets = "js"
+
+options(
+  link: {
+    "js": {
+      "exports": [
+        "convert_json",
+        "parse_json",
+        "parse_unit_json",
+        "inspect_json",
+      ],
+      "format": "esm",
+    },
+  },
+)
