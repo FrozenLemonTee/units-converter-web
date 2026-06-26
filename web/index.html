@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>units-converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="converter" aria-labelledby="title">
+        <div class="heading">
+          <p class="eyebrow">LunarUnits Web Demo</p>
+          <h1 id="title">units-converter</h1>
+        </div>
+
+        <form id="convert-form" class="form">
+          <label>
+            Quantity
+            <input id="quantity" name="quantity" value="9.8 m/s^2" autocomplete="off" />
+          </label>
+
+          <label>
+            Target unit
+            <input id="target" name="target" value="ft/s^2" autocomplete="off" />
+          </label>
+
+          <fieldset>
+            <legend>Format</legend>
+            <label><input type="radio" name="format" value="ascii" checked /> ASCII</label>
+            <label><input type="radio" name="format" value="si" /> SI</label>
+            <label><input type="radio" name="format" value="latex" /> LaTeX</label>
+          </fieldset>
+
+          <button type="submit">Convert</button>
+        </form>
+
+        <output id="result" class="result" aria-live="polite"></output>
+
+        <div class="examples" aria-label="Examples">
+          <button type="button" data-quantity="9.8 m/s^2" data-target="ft/s^2">Acceleration</button>
+          <button type="button" data-quantity="60 km/h" data-target="m/s">Speed</button>
+          <button type="button" data-quantity="1 kWh" data-target="J">Energy</button>
+          <button type="button" data-quantity="10 J/rad" data-target="N*m/rad">Torque</button>
+          <button type="button" data-quantity="3 m" data-target="s">Mismatch</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
